@@ -89,7 +89,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link"  href="viewseller.php">
-                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
+                    <i class="fas fa-fw fa-chart-area" ></i>
                     <span>View Seller</span></a>
             </li>
             <li class="nav-item">
@@ -99,12 +99,12 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="vieworders.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-chart-area" ></i>
                     <span>View Orders</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="viewmessage.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
                     <span>View Messages</span></a>
             </li>
 
@@ -437,17 +437,18 @@
 	     $con=mysqli_connect("localhost","root","","vendorsnearyou");
          $s=mysqli_query($con,"select * from contact");
 	  
-	     
+	             $c =1;
 	              while($row=mysqli_fetch_array($s))
                  {
                     echo "<tr style='color:black;'>";
                     
-                         echo "<td align='center'>$row[0]</td>";
-                         echo "<td align='center'>$row[1] </td>";
+                         echo "<td align='center'>$c</td>";
+                         echo "<td align='center'>$row[0] </td>";
+                         echo "<td align='center'>$row[1]</td>";
                          echo "<td align='center'>$row[2]</td>";
                          echo "<td align='center'>$row[3]</td>";
-                         echo "<td align='center'>$row[4]</td>";
                          
+                         $c = $c+1;
                         
                         echo "</tr>";
                        

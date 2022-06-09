@@ -95,17 +95,17 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link"  href="viewcustomer.php">
-                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
+                    <i class="fas fa-fw fa-chart-area" ></i>
                     <span>View Customers</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="vieworders.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
                     <span>View Orders</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="viewmessage.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-chart-area" ></i>
                     <span>View Messages</span></a>
 
             <!-- Nav Item - Utilities Collapse Menu -->

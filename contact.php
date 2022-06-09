@@ -215,8 +215,8 @@ if($result->status=='success')
               
                 <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="contact-form section-bg" style="background-image: url(assets/images/contact-1-720x480.jpg)">
-                        <form id="contact" action="message.php" method="post" style="">
-                          <div class="row" style="">
+                        <form id="contact" action="message.php" method="post" >
+                          <div class="row">
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
                                 <input name="name" type="text" id="name" placeholder="Your Name*" required="">
