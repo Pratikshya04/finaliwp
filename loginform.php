@@ -24,13 +24,12 @@
   <body>
 
   <?php
-    $url="http://localhost/156020K/Lab5?link=loginform.php";
+if( isset( $_GET['invalid_login'] ) AND $_GET['invalid_login'] == 'true' ) {
+  echo "<script>alert('Invalid username/password');</script>";
 
-    if(isset($_GET['link']))
-    {
-        echo "Invalid Username and Password";
-    }
-?>
+}
+  ?>
+
 
   <header class="header-area header-sticky" style="height: 6.5rem ;">
         <div class="container" >

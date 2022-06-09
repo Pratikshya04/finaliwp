@@ -22,6 +22,13 @@
     
   </head>
   <body>
+
+  <?php
+   if( isset( $_GET['invalid_login'] ) AND $_GET['invalid_login'] == 'true' ) {
+    echo "<script>alert('Invalid username/password');</script>";
+  }
+  ?>
+
   <header class="header-area header-sticky" style="height: 6.5rem ;">
         <div class="container" >
             <div class="row" >
