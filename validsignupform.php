@@ -8,11 +8,9 @@
       $email=$_POST["email"];
       $phone=$_POST["phone"];
       $pass=$_POST["password"];
+      
 
-       
-
-      if($fn)
-          
+      
 
         $r=mysqli_query($con,"insert into customerregister(firstname,lastname,email,phonenumber,password)values('$fn','$ln','$email','$phone','$pass') ");
         if($r)
