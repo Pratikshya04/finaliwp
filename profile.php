@@ -1,9 +1,6 @@
 <?php
-session_start();
-?>
-
-
-
+  session_start();
+  ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +12,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-
+    
     <title> Free Food Store Website Template</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -50,18 +47,20 @@ session_start();
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         
-                        <a href="index.php" class="logo"><img src ="assets/images/logonew.svg" style="height:9rem; width:9rem; margin-top:-1.5rem; margin-left:-5.2rem;"><span style="padding-left:-2rem;font-size:2rem">Gro-Fresh</span><em> </em></a>
+                        <a href="showproducts.php" class="logo"><img src ="assets/images/logonew.svg" style="height:9rem; width:9rem; margin-top:-1.5rem; margin-left:-5.2rem;"><span style="padding-left:-2rem;font-size:2rem">Gro-Fresh</span><em> </em></a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
-                            <li><a href="index.php">Home</a></li>
+                            <li><a href="index.php" class="active">Home</a></li>
                                      
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                               
                                 <div class="dropdown-menu">
                                 <a class="dropdown-item" href="grocery.php">Groceries</a>
-                                    <a class="dropdown-item" href="vegetables.php">Fruits and Vegetables</a>
+                                
+                                    
+                                    <a class="dropdown-item" href="vegetable.php">Fruits and Vegetables</a>
                                     <a class="dropdown-item" href="dairy.php">Dairy Products</a>
                                     
                                 </div>
@@ -70,7 +69,7 @@ session_start();
                             
                             
                     
-                            <li><a href="aboutus.php" class="active">About Us</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
                         
                             <li><a href="contact.php">Contact</a></li> 
                             <?php
@@ -79,8 +78,43 @@ session_start();
                                   $logornot=$_SESSION["clog"];
                                    if($logornot=="yes")
                                    {
-                                       echo "<li><a class=' py-sm-0 px-sm-3' href='index.php.php'>Logout</a></li>";
-                                   } 
+                                       echo "<li><a class=' py-sm-0 px-sm-3' href='logoutindex.php'>Logout</a></li>";
+                                   }
+                                } 
+                                else
+                                {
+                                    echo "
+                                    <li class='dropdown'>
+                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>Login</a>
+                                  
+                                    <div class='dropdown-menu'>
+                                    <a class='dropdown-item' href='adminlogin.php'>Admin Login</a>
+                                        <a class='dropdown-item' href='loginform.php'>Customer Login</a>
+                                        <a class='dropdown-item' href='sellerlogin.php'>Seller Login</a>
+                                    </div>
+                                </li>
+                            
+                               <li class='dropdown'>
+                               <a class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>$citydisplay</a>
+
+
+
+                                <div class='dropdown-menu'>
+                                <form class='dropdown-item'>
+                                   <select name='cityname'>
+                                   <option value=''>Vellore</option>
+                                   <option value=''>Bengaluru</option>
+                                   <option value=''>Chennai</option>
+                                   </select>
+                                   <br><br>
+                                   <input type='text' placeholder='apartment no and locality'>
+                                 </form>  
+                                                                        
+                                </div>
+                                    
+                                    
+                                   </li> 
+                                    ";
                                 }
                               
                             ?>
@@ -95,36 +129,55 @@ session_start();
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
-    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/bg.jpg)">
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/profile.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
-                    <h2>ABOUT<em>US</em></h2>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-
-    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/ab.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="cta-content">
-                        
-                        <h5 style="color:white; align:justify">An enhanced, interactive listing of neighborhood grocers,vendors and dairy. Get a clear online perspective of what’s available locally. What’s new, fresh, just made, ready to eat, finally ready, harvested yesterday and so on. For the first time, local grocers and residents have an open communication channel at one reputable source. And we’ll all save tons of trees.</h5>
-                        
+                        <br>
+                        <br>
+                        <h2>My <em></em>Profile</h2>
+                        <p>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ***** Call to Action End ***** -->
-   <!-- Footer Start -->
+
+    <!-- ***** Fleet Starts ***** -->
+    <div class="col-lg-6 py-3 wow ">
+    <?php
+      $un=$_SESSION["un"];
+      $con=mysqli_connect("localhost","root","","vendorsnearyou");
+      
+      $r=mysqli_query($con,"select * from customerregister where email='$un'");
+      while($row=mysqli_fetch_array($r))
+          { echo"
+            <table class='table table-borderless table-dark '>
+            <tbody>
+              <tr>
+                <td>First Name: $row[1]</td>
+                </tr>
+              <tr>
+                <td>Last Name: $row[2]</td>
+                </tr>
+                <tr>
+                <td>Email: $row[3]</td>
+                  </tr>
+                  <tr>
+                  <td>Phone: $row[4]</td>
+                    </tr>
+  
+            </tbody>
+          </table>";
+          }    
+    ?>
+              </div>
+
+     <!-- Footer Start -->
    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -141,8 +194,8 @@ session_start();
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a><br>
-                    <a class="btn btn-link" href="">Contact Us</a><br>
+                    <a class="btn btn-link" href="aboutus.php">About Us</a><br>
+                    <a class="btn btn-link" href="contact.php">Contact Us</a><br>
                     <a class="btn btn-link" href="">Our Services</a><br>
                     <a class="btn btn-link" href="">Terms & Condition</a><br>
                     <a class="btn btn-link" href="">Support</a>
@@ -164,7 +217,6 @@ session_start();
     </div>
     <!-- Footer End -->
 
-
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 
@@ -182,5 +234,6 @@ session_start();
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+
   </body>
 </html>

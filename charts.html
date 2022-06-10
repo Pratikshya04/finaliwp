@@ -2,24 +2,6 @@
 <html lang="en">
 
 <head>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
-<script>
-   $(document).ready(function() {
-    $('#example').DataTable( {
-        dom: 'Bfrtip',
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print' ]
-    } );
-} )
-</script>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Add Seller</title>
+    <title>SB Admin 2 - Charts</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -49,19 +31,19 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Admin.php">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">GRO-FRESH</div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="Admin.php">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -76,40 +58,22 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link"  href="addseller.php">
-                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
-                    <span>Add Seller</span></a>
-        
-               
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="delseller.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Delete Seller</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="viewseller.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>View Seller</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="viewcustomer.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>View Customers</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="vieworders.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>View Orders</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="viewmessage.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>View Messages</span></a>
 
-           
-           <!-- Nav Item - Utilities Collapse Menu -->
-           <li class="nav-item">
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -119,10 +83,10 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="#">Colors</a>
-                        <a class="collapse-item" href="#">Borders</a>
-                        <a class="collapse-item" href="#">Animations</a>
-                        <a class="collapse-item" href="#">Other</a>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
                     </div>
                 </div>
             </li>
@@ -145,19 +109,19 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="#">Login</a>
-                        <a class="collapse-item" href="#">Register</a>
-                        <a class="collapse-item" href="#">Forgot Password</a>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="#">404 Page</a>
-                        <a class="collapse-item" href="#">Blank Page</a>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span></a>
@@ -178,13 +142,6 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
-            <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>Gro-Fresh Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div>
-
         </ul>
         <!-- End of Sidebar -->
 
@@ -194,7 +151,8 @@
             <!-- Main Content -->
             <div id="content">
 
-                <!-- Topbar --> <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -365,7 +323,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Shailendra</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -399,153 +357,85 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                     <br>
+
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        
-                    </div>
-                    <div class="page-hero bg-image overlay-dark" style="background-image: url(assets/images/addseller.jpg); background-repeat:no-repeat;background-size:cover;height:20%">
-    <div class="hero-section">
-      <div class="container text-center wow zoomIn">
-          <br>
-        <span class="subhead" style='color:aliceblue'>Let's make it easy</span><br>
-        <span class="display-4" style="height:1em;color:aliceblue">Add Seller</span>
-        <br>
-        <br>
-        <a href="#" class="btn "></a>
-      </div>
-    </div>
-  </div>
-            <br><br>
-            <form action="validadminseller.php" method="POST">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="fname">First Name</label>
-                    <input type="text" name="fname" class="form-control" placeholder="e.g. John" id="fname">
-                  </div>    
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="lname">Last Name</label>
-                    <input type="text" name="lname" class="form-control" placeholder="e.g. Smith" id="lname">
-                  </div>    
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="username">username</label>
-                    <input type="text" name="username" class="form-control" placeholder="e.g. user123" id="username">
-                  </div>    
-                </div>
-              
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" class="form-control" placeholder="e.g. john@your-domain.com" id="email">
-                  </div>    
-                </div>
-              </div>
+                    <h1 class="h3 mb-2 text-gray-800">Charts</h1>
+                    <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme.
+                        The charts below have been customized - for further customization options, please visit the <a
+                            target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js
+                            documentation</a>.</p>
 
-              <div class="row">
-              <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="phoneno">Phone Number</label>
-                    <input type="text" name="phone" class="form-control" placeholder="+00 0000000000" id="phoneno">
-                  </div>    
-                </div>
+                    <!-- Content Row -->
+                    <div class="row">
 
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="email">Shop-name</label>
-                    <input type="text" name="shopname" class="form-control" id="shopname">
-                  </div>    
-                </div> 
-              </div>
-              
-              <div class="row">
-              <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="email">Shop-No</label>
-                    <input type="text" name="shopname" class="form-control" id="shopno">
-                  </div>    
-                </div>
+                        <div class="col-xl-8 col-lg-7">
 
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="Street">Street name</label>
-                    <input type="text" name="street" class="form-control" placeholder="" id="street">
-                  </div>    
-                </div>
-              </div>
+                            <!-- Area Chart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="myAreaChart"></canvas>
+                                    </div>
+                                    <hr>
+                                    Styling for the area chart can be found in the
+                                    <code>/js/demo/chart-area-demo.js</code> file.
+                                </div>
+                            </div>
 
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="City">City</label>
-                    <input type="text" name="city" class="form-control" placeholder="" id="City">
-                  </div>    
-                </div>
-              
+                            <!-- Bar Chart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-bar">
+                                        <canvas id="myBarChart"></canvas>
+                                    </div>
+                                    <hr>
+                                    Styling for the bar chart can be found in the
+                                    <code>/js/demo/chart-bar-demo.js</code> file.
+                                </div>
+                            </div>
 
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="State">State</label>
-                    <input type="text" name="state" class="form-control" placeholder="" id="State">
-                  </div>    
-                </div>
-              </div>
+                        </div>
 
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="country">Country</label>
-                    <input type="text" name="country" class="form-control" placeholder="" id="country">
-                  </div>    
-                </div>
-              
-                <div class="col-md-6">
-                  <div class="form-group first">
-                    <label for="pin">Pin code</label>
-                    <input type="number" name="pin" class="form-control" placeholder="" id="pin">
-                  </div>    
-                </div>
-              </div>
-                
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group last mb-3">
-                      <label for="password">Password</label>
-                      <input type="password" name="password" class="form-control" placeholder="Your Password" id="password">
-                    </div>
-                  </div>
-
-                <div class="col-md-6">
-                  <div class="form-group last mb-3">
-                    <label for="re-password">Re-type Password</label>
-                    <input type="password" class="form-control" placeholder="Your Password" id="re-password">
-                  </div>
-                </div>
-              </div>
-              
-             <input type="submit" class="btn btn-primary mt-3 wow zoomIn" value="Register"> 
-              
-            </form>
-                
+                        <!-- Donut Chart -->
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4">
+                                        <canvas id="myPieChart"></canvas>
+                                    </div>
+                                    <hr>
+                                    Styling for the donut chart can be found in the
+                                    <code>/js/demo/chart-pie-demo.js</code> file.
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-                <br><br>
                 <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
-           
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>
             <!-- End of Footer -->
 
         </div>
@@ -573,7 +463,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="adminlogin.php">Logout</a>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
             </div>
         </div>
@@ -595,6 +485,7 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
 
 </body>
 

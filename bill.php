@@ -1,7 +1,7 @@
 <?php
   session_start(); 
 ?>
-<div >
+<div style=''>
  <div style='margin-left:320px;' >
  
  
@@ -160,7 +160,7 @@
 
                                     <tbody class="totals">
 
-                                        <tr>
+                                        <tr style=''>
                                             <td style='font-weight:bold'>
                                                 <div class="text-left">
 

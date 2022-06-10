@@ -60,7 +60,7 @@ session_start();
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link active" style="color:green;">Home</a>
                     <a href="addproduct.php" class="nav-item nav-link">Products</a>
-                    <a href="product.html" class="nav-item nav-link">My Profile</a>
+                   
                     
                         
                         
@@ -118,7 +118,7 @@ session_start();
                                 <div class="col-lg-7">
                                     <h1 class="display-2 mb-5 animated slideInDown">Get your favorite food products here</h1>
                                     <a href="addproduct.php" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5">Products</a>
-                                    <a href="" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Orders</a>
+                                    
                                 </div>
                             </div>
                         </div>

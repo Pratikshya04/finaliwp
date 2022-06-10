@@ -57,8 +57,7 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="sellerhome.php" class="nav-item nav-link">Home</a>
                     <a href="" class="nav-item nav-link active" style="color:green;">Products</a>
-                    <a href="product.html" class="nav-item nav-link">My Profile</a>
-                    
+                   
                        
                        
                         <?php

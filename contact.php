@@ -69,11 +69,11 @@ if($result->status=='success')
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                               
                                 <div class="dropdown-menu">
-                                <a class="dropdown-item" href="adminlogin.php">Groceries</a>
+                                <a class="dropdown-item" href="grocery.php">Groceries</a>
                                 
                                     
-                                    <a class="dropdown-item" href="loginform.php">Fruits and Vegetables</a>
-                                    <a class="dropdown-item" href="">Dairy Products</a>
+                                    <a class="dropdown-item" href="vegetables.php">Fruits and Vegetables</a>
+                                    <a class="dropdown-item" href="dairy.php">Dairy Products</a>
                                     
                                 </div>
                             <li><a href="checkout.php">Checkout</a></li>
