@@ -417,7 +417,7 @@
       </div>
     </div>
   </div>
-  <div style='float:right; width:80%'>
+  <div style=' width:80%; margin-left:200px'>
 	<br>
 	<table border="1" id="example" class="display" style='width:50em;margin-left:-1.875em !important' >
          <thead>
