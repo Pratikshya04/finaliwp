@@ -19,6 +19,15 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
+
 
 </head>
 
@@ -31,7 +40,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Admin.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -43,7 +52,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="Admin.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -79,6 +88,16 @@
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>View Customers</span></a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="vieworders.php">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>View Orders</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="viewmessage.php">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>View Messages</span></a>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
@@ -122,8 +141,8 @@
                         <a class="collapse-item" href="#">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="#l">404 Page</a>
-                        <a class="collapse-item" href="#">Blank Page</a>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
             </li>
@@ -145,10 +164,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+          <br><br>
 
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
