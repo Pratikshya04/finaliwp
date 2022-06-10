@@ -72,9 +72,6 @@ if($result->status=='success')
                                     
                                 </div>
                             <li><a href="checkout.php">Checkout</a></li>
-                            
-                            
-                            
                     
                             <li><a href="aboutus.php">About Us</a></li>
                         

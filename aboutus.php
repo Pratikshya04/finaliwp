@@ -109,7 +109,7 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
                         
-                        <h5 style="color:white; align:justify">An enhanced, interactive listing of neighborhood grocers,vendors and dairy. Get a clear online perspective of what’s available locally. What’s new, fresh, just made, ready to eat, finally ready, harvested yesterday and so on. For the first time, local grocers and residents have an open communication channel at one reputable source. And we’ll all save tons of trees.</h5>
+                        <h5 style="color:white;">An enhanced, interactive listing of neighborhood grocers,vendors and dairy. Get a clear online perspective of what’s available locally. What’s new, fresh, just made, ready to eat, finally ready, harvested yesterday and so on. For the first time, local grocers and residents have an open communication channel at one reputable source. And we’ll all save tons of trees.</h5>
                         
                     </div>
                 </div>
