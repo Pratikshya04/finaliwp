@@ -531,9 +531,18 @@
                 </div>
               </div>
               
+              <div class="d-flex mb-5 mt-4 align-items-center" >
+                <div class="d-flex align-items-center">
+                <label class="control control--checkbox mb-0"><span class="caption">Creating an account means you're okay with our <a href="#">Terms and Conditions</a> and our <a href="#">Privacy Policy</a>.</span>
+                  <input type="checkbox" checked="checked"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </div>
+              </div>
              <input type="submit" class="btn btn-primary mt-3 wow zoomIn" value="Register"> 
-               </form>
-                <br><br>
+              <p><a href="sellerlogin.php">Already registered? Back to Login</a></p>
+            </form>
+                
                     </div>
 
                 </div>
@@ -571,7 +580,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="adminlogin.php">Logout</a>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
             </div>
         </div>

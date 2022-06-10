@@ -23,12 +23,6 @@
     
   </head>
   <body>
-  <?php
-   if( isset( $_GET['invalid_login'] ) AND $_GET['invalid_login'] == 'true' ) {
-    echo "<script>alert('Invalid username/password');</script>";
-  }
-  ?>
-
   <header class="header-area header-sticky" style="height: 6.5rem ;">
         <div class="container" >
             <div class="row" >
@@ -66,7 +60,7 @@
     </header>
     
   <div class="d-lg-flex half" style="height:100%">
-    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/seller.jpg');"></div>
+    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/seller.jpg');margin-top:% ;"></div>
     <div class="contents order-2 order-md-1">
 
       <div class="container" >

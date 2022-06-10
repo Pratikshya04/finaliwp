@@ -22,6 +22,7 @@
     
   </head>
   <body>
+<<<<<<< HEAD
 
   <?php
    if( isset( $_GET['invalid_login'] ) AND $_GET['invalid_login'] == 'true' ) {
@@ -30,6 +31,8 @@
   }
   ?>
 
+=======
+>>>>>>> 859efc9c30701df6a3ce7f74a2ef58a6c628f73c
   <header class="header-area header-sticky" style="height: 6.5rem ;">
         <div class="container" >
             <div class="row" >

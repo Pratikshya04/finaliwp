@@ -18,11 +18,8 @@
             }
             else
             {
-              header("location:adminlogin.php?invalid_login=true");
+              header("location:adminlogin.php");
             }
-        } else
-        {
-          header("location:adminlogin.php?invalid_login=true");
         }
         
       }

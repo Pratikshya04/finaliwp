@@ -46,8 +46,7 @@ session_start();
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i></small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i></small>
+                
             </div>
             
         </div>
@@ -64,7 +63,7 @@ session_start();
                     <a href="product.html" class="nav-item nav-link">My Profile</a>
                     
                         
-                        <a href="contact.php" class="nav-item nav-link">Messages</a>
+                        
                         <?php
                               if(isset($_SESSION['log']))
                               {
@@ -105,7 +104,7 @@ session_start();
                                 <div class="col-lg-7">
                                     <h1 class="display-2 mb-5 animated slideInDown">Your favorite neighborhood store</h1>
                                     <a href="addproduct.php" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5">Products</a>
-                                    <a href="" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Orders</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -148,7 +147,7 @@ session_start();
         <div class="container py-5" style="margin-left:40rem;">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <a href="index.php" class="logo"><img src ="img/logo.png" style="height:5rem; width:5rem; margin-top:-1.5rem; margin-left:1rem;"><span style="padding-left:-2rem;font-size:2rem;"><b>Gro-Fresh</b></span><em> </em></a>
+                    <a href="sellerhome.php" class="logo"><img src ="img/logo.png" style="height:5rem; width:5rem; margin-top:-1.5rem; margin-left:1rem;"><span style="padding-left:-2rem;font-size:2rem;"><b>Gro-Fresh</b></span><em> </em></a>
                     <p style="text-align:center;">Vendors Near You!! We made shopping simple </p>
                     
                 </div>

@@ -17,13 +17,13 @@
                 header("location:index.php");
             }
             else{
-              header("Location:loginform.php?invalid_login=true");
+              header("location:loginform.php");
 
             }
         }
         else
         {
-          header("Location:loginform.php?invalid_login=true");
+          header("location:loginform.php");
         }
       }
 ?>
