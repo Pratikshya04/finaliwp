@@ -1,7 +1,7 @@
 <?php
 session_start();
 $ch=curl_init();
-curl_setopt($ch,CURLOPT_URL,'http://ip-api.com/json');
+curl_setopt($ch,CURLOPT_URL, 'http://ip-api.com/json');
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 $result=curl_exec($ch);
 $result=json_decode($result);
@@ -22,7 +22,7 @@ if($result->status=='success')
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-    <title> Free Food Store Website Template</title>
+    <title> Gro Fresh </title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -71,12 +71,11 @@ if($result->status=='success')
                                     <a class="dropdown-item" href="dairy.php">Dairy Products</a>
                                     
                                 </div>
-                            <li><a href="checkout.php">Checkout</a></li>
                             
                             
                             
                     
-                            <li><a href="aboutus.php">About Us</a></li>
+                            <li><a href="">About Us</a></li>
                         
                             <li><a href="contact.php">Contact</a></li> 
                             <?php
@@ -98,10 +97,10 @@ if($result->status=='success')
                                            <option value=''>Chennai</option>
                                            </select>
                                            <br><br>
-                                           <input type='text' placeholder='apartment no and locality'>
                                          </form>  
                                                                                 
                                         </div>
+                                        <li><a class=' py-sm-0 px-sm-3' href='profile.php'>Profile</a></li>
                                             
                                             
                                            </li> 
@@ -128,17 +127,13 @@ if($result->status=='success')
                                 <div class='dropdown-menu'>
                                 <form class='dropdown-item'>
                                    <select name='cityname'>
-                                   <option value=''>Vellore</option>
-                                   <option value=''>Bengaluru</option>
-                                   <option value=''>Chennai</option>
+                                   <option value='Vellore'>Vellore</option>
+                                   <option value='Bengaluru'>Bengaluru</option>
+                                   <option value='Chennai'>Chennai</option>
                                    </select>
-                                   <br><br>
-                                   <input type='text' placeholder='apartment no and locality'>
                                  </form>  
                                                                         
-                                </div>
-                                    
-                                    
+                                </div
                                    </li> 
                                     ";
                                 }
@@ -168,9 +163,14 @@ if($result->status=='success')
                 <h6>Order groceries from your nearby stores</h6>
                 <h2 Style="color:#ed563b";>Welcome  <em>to </h2>
                 <h2>Gro-Fresh</h2>
+
+
                 
-                
-                
+
+                <div style="margin-top:5rem;margin-left:2rem;">
+                <input type="text" placeholder="What do yo u need?">
+                                <button type="submit" class="site-btn" style="color:white;background-color:#ed563b;">SEARCH</button>
+
 </div>
                 
             </div>
@@ -244,7 +244,7 @@ if($result->status=='success')
     </section>
     <!-- ***** Cars Ends ***** -->
 
-    <section class="section section-bg" id="schedule" style="background-image: url(assets/images/about.jpg)">
+    <section class="section section-bg" id="schedule" style="background-image: url(assets/images/about-fullscreen-1-1920x700.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
@@ -272,7 +272,7 @@ if($result->status=='success')
     <br>
     <br>
     <!-- ***** Call to Action Start ***** -->
-    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/ban.jpg)">
+    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
@@ -280,7 +280,7 @@ if($result->status=='success')
                         
                         <h2>Send us a <em>message</em></h2>
                         <div class="main-button">
-                            <a href="contact.php">Contact us</a>
+                            <a href="contact.html">Contact us</a>
                         </div>
                     </div>
                 </div>
@@ -291,46 +291,18 @@ if($result->status=='success')
 
    
     
-    <!-- Footer Start -->
-   <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h1 class="fw-bold text-primary mb-4">GRO<span class="text-secondary">-</span>FRESH</h1>
-                    <p>Vendors Near You!!</p>
-                    
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                   
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a><br>
-                    <a class="btn btn-link" href="">Contact Us</a><br>
-                    <a class="btn btn-link" href="">Our Services</a><br>
-                    <a class="btn btn-link" href="">Terms & Condition</a><br>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2022 Gro-Fresh
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Gro-Fresh@2022</a>, All Right Reserved.
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
+    </footer>
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>

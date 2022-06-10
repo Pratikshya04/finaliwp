@@ -13,7 +13,7 @@
             if($row[5]==$pp)
             { 
                 $_SESSION["clog"]="yes";
-                $_SESSION["unm"]=$un;
+                $_SESSION["un"]=$un;
                 header("location:index.php");
             }
             else{
