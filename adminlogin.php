@@ -40,7 +40,19 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
                             <li><a href="index.php" style="color:black;">Home</a></li>
+<<<<<<< HEAD
                             
+=======
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">Categories</a>
+                              
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item" href="grocery.php">Groceries</a>
+                                    <a class="dropdown-item" href="vegetables.php">Fruits and Vegetables</a>
+                                    <a class="dropdown-item" href="dairy.php">Dairy Products</a>
+                                    
+                                </div>
+>>>>>>> b557201c54844e76d690633798e156889e9c1a30
                             
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:red;">Login</a>

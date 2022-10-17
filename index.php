@@ -246,7 +246,11 @@ if($result->status=='success')
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading dark-bg">
                         <h2>Read <em>About Us</em></h2>
+<<<<<<< HEAD
                         <h5 style="color:white">An enhanced, interactive listing of neighborhood grocers,vendors and dairy. Get a clear online perspective of what’s available locally. What’s new, fresh, just made, ready to eat, finally ready, harvested yesterday and so on. For the first time, local grocers and residents have an open communication channel at one reputable source. And we’ll all save tons of trees.</h5>
+=======
+                        <h5 style="color:white;">An enhanced, interactive listing of neighborhood grocers,vendors and dairy. Get a clear online perspective of what’s available locally. What’s new, fresh, just made, ready to eat, finally ready, harvested yesterday and so on. For the first time, local grocers and residents have an open communication channel at one reputable source. And we’ll all save tons of trees.</h5>
+>>>>>>> b557201c54844e76d690633798e156889e9c1a30
                         <img src="assets/images/line-dec.png" alt="">
                     </div>
                 </div>

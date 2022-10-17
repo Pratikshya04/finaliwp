@@ -51,9 +51,13 @@ session_start();
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
                             <li><a href="index.php" style="color:black;">Home</a></li>
+<<<<<<< HEAD
                             
                            
                             
+=======
+                       
+>>>>>>> b557201c54844e76d690633798e156889e9c1a30
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:red;">Login</a>
                                 <div class="dropdown-menu">
