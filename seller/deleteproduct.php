@@ -85,12 +85,17 @@
                                    {
                                        echo "<a class='btn btn-outline-primary rounded-pill py-sm-4 px-sm-3' href='../index.php'>Logout</a>";
                                    }
-                                }     
+                                } 
+                              
                             ?>
                     
                         
                     </div>
-                </div>                
+
+ 
+
+                </div>
+                
             </div>
         </nav>
     </div>
