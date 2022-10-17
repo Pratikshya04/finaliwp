@@ -113,8 +113,7 @@
                <div class='col-lg-5 wow' data-wow-delay='400ms'>
                     <a href=''>
                       <div class='img-place custom-img-1' style=';height:15.625em;width:22.625em;'>";
-                     
-                      
+                                          
                        echo "<img src='../seller/img/$row[image]' style='height:15em;'>";
                         
                        echo "</div>
